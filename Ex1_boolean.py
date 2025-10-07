@@ -27,8 +27,12 @@
 # 2. Compare them using >, <, ==, != and print the results.
 
 # Write your code below:
-
-
+num1 = 5
+num2 = 17
+print(num1 > num2)
+print(num1 < num2)
+print(num1 == num2)
+print(num1 != num2)
 # Step 2: String Comparisons
 # --------------------------
 # You can compare text (strings) using == or !=.
@@ -44,6 +48,11 @@
 # 3. Compare them using != and print the result.
 
 # Write your code below:
+word1 = ("green mango")
+word2 = ("yellow mango")
+print(word1 < word2)
+print(word1 > word2)
+print(word1 == word2)
 
 
 # Step 3: Input and Boolean Results
@@ -61,6 +70,9 @@
 # Ask the user to type a word and compare it to a stored string, then print True/False.
 
 # Write your code below:
+user_number = int(input("what is a user number? "))
+print(user_number != 10)
+
 
 # -------------------------------------------
 # Submitting Your Work
