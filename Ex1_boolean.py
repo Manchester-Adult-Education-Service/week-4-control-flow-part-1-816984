@@ -47,10 +47,10 @@ print(num1 != num2)
 # 2. Compare them using == and print the result.
 # 3. Compare them using != and print the result.
 
-# Write your code below:
+Write your code below:
 word1 = ("green mango")
 word2 = ("yellow mango")
-print(word1 < word2)
+print(word1 != word2)
 print(word1 > word2)
 print(word1 == word2)
 
@@ -71,7 +71,15 @@ print(word1 == word2)
 
 # Write your code below:
 user_number = int(input("what is a user number? "))
-print(user_number != 10)
+if user_number > 10:
+    print("True")
+else:
+    print("False")
+user_word = input("")
+if user_word.lower() == "jack":
+    print("True")
+else:
+    print("False")
 
 
 # -------------------------------------------
@@ -94,12 +102,18 @@ print(user_number != 10)
 # Compare it to a stored password and print the Boolean result using print().
 # Example:
 # print(user_input == stored_password)  # True if correct, False otherwise
+storedpassword = "Keyboard"
+user_password = input("Enter your password.\n")
+print(user_password == storedpassword)
+
 
 # Extension 2:
 # Ask the user to enter any text.
 # Check if they actually typed something (not empty) and print True/False.
 # Example:
 # print(len(text_input) > 0)  # True if they typed something
+text = input("Enter some text.\n")
+print(len(text) > 0)
 
 # Extension 3 (more challenging):
 # Combine multiple Booleans using AND, OR operators.
@@ -110,7 +124,9 @@ print(user_number != 10)
 # Hint: use print((num1 > 10) and (num2 < 20)) to see True or False
 
 # Write your extension code below:
-
+number1 = int(input("Enter a number:\n"))
+number2 = int(input("Enter a number.\n"))
+print((number1 > 10) and (number2 < 20))
 
 # -------------------------------------------
 # Submitting Your Work
